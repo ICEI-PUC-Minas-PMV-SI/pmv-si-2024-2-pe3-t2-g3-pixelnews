@@ -20,7 +20,7 @@ Victor Samuel Costa Pereira
 
 ## Orientador
 
-* Nome completo do professor 
+Fábio Martins de Oliveira
 
 # Planejamento
 
