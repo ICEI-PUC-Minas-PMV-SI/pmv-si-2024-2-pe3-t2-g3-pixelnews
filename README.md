@@ -1,4 +1,4 @@
-# Pixelnews
+# PixelNews
 
 `CURSO: Sistemas de Informação`
 
