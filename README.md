@@ -1,4 +1,4 @@
-# Título do Projeto
+# Pixelnews
 
 `CURSO: Sistemas de Informação`
 
@@ -6,16 +6,17 @@
 
 `SEMESTRE: 3º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O trabalho em desenvolvimento busca criar um portal integrado de notícias e lançamentos do mundo dos videogames que atenda à crescente demanda por informações atualizadas e interação social no setor, oferecendo funcionalidades como avaliações de jogos, comentários, gráficos, e ferramentas de pesquisa avançada em um ambiente que promove uma comunidade ativa e engajada. Aproveitando práticas de gamificação e tecnologias emergentes, o projeto se baseia em estudos acadêmicos sobre a gestão eficiente de informações e a aplicação de elementos interativos para aumentar o engajamento dos usuários. O portal visa preencher uma lacuna existente no mercado, oferecendo uma plataforma abrangente e intuitiva que beneficia tanto jogadores quanto desenvolvedores e publicadores de jogos, fortalecendo a conexão entre a comunidade gamer e a indústria de videogames.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+Breno de Rezende Moreira
+Jack Medeiros de Paula Pereira Demori
+Lucas Araújo Pacheco
+Lucas Rodrigo Gonçalves
+Samir de Santi
+Theo Xavier Lopes
+Victor Samuel Costa Pereira
 
 ## Orientador
 
