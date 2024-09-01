@@ -8,17 +8,17 @@ A problemática central identificada está na falta de uma plataforma integrada 
 
 ## 1.2. Objetivos do trabalho
 
-O principal objetivo da proposta é desenvolver um Portal de Notícias e Lan-çamentos do Mundo dos Videogames que atenda às necessidades informativas e sociais dos jogadores. Este portal integrará diversas funcionalidades, incluindo:
+O principal objetivo da proposta é desenvolver um Portal de Notícias e Lançamentos do Mundo dos Videogames que atenda às necessidades informativas e sociais dos jogadores. Este portal integrará diversas funcionalidades, incluindo:
 1.	Notícias e Lançamentos: Publicação de notícias sobre o universo dos games, lançamentos de jogos, informações sobre jogos em desenvolvimento e novidades tecnológicas.  
 2.	Análises e Avaliações: Espaço para análise crítica dos jogos, com notas atribuídas pelos editores e pela comunidade.  
 3.	Interação Social: Funcionalidades de criação de conta, permitindo que os usuários avaliem e comentem sobre os jogos e notícias, além de interagir entre si.  
-4.	Pesquisa e Filtragem: Ferramentas de pesquisa avançada que permi-tam aos usuários encontrar jogos por gênero, plataforma, data de lançamento, entre outros filtros.  
+4.	Pesquisa e Filtragem: Ferramentas de pesquisa avançada que permitam aos usuários encontrar jogos por gênero, plataforma, data de lançamento, entre outros filtros.  
 5.	Conteúdos Visuais: Exibição de gráficos, trailers, imagens e outros recursos visuais que completem a experiência informativa e ajudem na decisão de compra dos jogadores.  
 
 
 ## 1.3. Justificativa
 
-O desenvolvimento deste portal se justifica pela crescente demanda por in-formações integradas e confiáveis no mundo dos videogames. A indústria de games evolui rapidamente, e jogadores buscam um local único onde possam se manter informados, compartilhar suas opiniões e descobrir novos títulos de forma prática e organizada. A falta de um ambiente que combine essas funcionalidades limita a ex-periência dos usuários, que acabam precisando navegar por diversas fontes e co-munidades para obter uma visão completa do mercado.  
+O desenvolvimento deste portal se justifica pela crescente demanda por informações integradas e confiáveis no mundo dos videogames. A indústria de games evolui rapidamente, e jogadores buscam um local único onde possam se manter informados, compartilhar suas opiniões e descobrir novos títulos de forma prática e organizada. A falta de um ambiente que combine essas funcionalidades limita a experiência dos usuários, que acabam precisando navegar por diversas fontes e comunidades para obter uma visão completa do mercado.  
 
 Além disso, o projeto é relevante tanto para a comunidade gamer quanto para desenvolvedores e publicadores de jogos, que terão uma plataforma consolidada para divulgar seus produtos e interagir diretamente com o público-alvo.
 
