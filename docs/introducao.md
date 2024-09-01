@@ -23,6 +23,6 @@ O desenvolvimento deste portal se justifica pela crescente demanda por informaç
 Além disso, o projeto é relevante tanto para a comunidade gamer quanto para desenvolvedores e publicadores de jogos, que terão uma plataforma consolidada para divulgar seus produtos e interagir diretamente com o público-alvo.
 
 
-## 1.4. Público alvo
+## 1.4. Público-alvo
 
 O público-alvo deste portal abrange tanto jogadores casuais quanto hardcore, que buscam desde notícias rápidas até análises aprofundadas sobre os jogos. Além dos jogadores, a plataforma também é destinada a desenvolvedores, publicadores e demais profissionais da indústria de games que desejam acompanhar tendências, avaliar a recepção de seus jogos e interagir com a comunidade.
