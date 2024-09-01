@@ -2,8 +2,6 @@
 
 O mercado de videogames é uma das indústrias de entretenimento mais dinâmicas e lucrativas do mundo. Com uma base de jogadores que ultrapassa 3 bilhões de pessoas globalmente, o setor de games abrange uma vasta gama de produtos, desde consoles e jogos até serviços digitais e eventos competitivos, como os eSports. Nesse cenário, o interesse por notícias, lançamentos e análises aprofundadas sobre o mundo dos games nunca foi tão grande. Jogadores de todas as idades e perfis buscam informações atualizadas sobre os jogos que estão em desenvolvimento, análises críticas, gráficos, novos lançamentos, e outras informações relevantes que possam enriquecer sua experiência.
 
-No entanto, apesar do crescimento exponencial da indústria, ainda existe uma carência de portais que consolidem de maneira abrangente e interativa essas informações, oferecendo não apenas notícias e análises, mas também funcionalidades sociais que permitam aos usuários participar ativamente da comunidade de gamers.
-
 ## 1.1. Problema
 
 A problemática central identificada está na falta de uma plataforma integrada que ofereça informações completas sobre o mundo dos videogames e, ao mesmo tempo, possibilite a interação entre os usuários. Muitos portais existentes se focam exclusivamente em notícias ou análises de jogos, deixando de lado funcionalidades que permitam uma participação mais ativa da comunidade gamer. Além disso, a segmentação das informações por diferentes sites e plataformas dificulta a navegação dos usuários e o acesso a dados atualizados e confiáveis.
@@ -11,7 +9,7 @@ A problemática central identificada está na falta de uma plataforma integrada 
 ## 1.2. Objetivos do trabalho
 
 O principal objetivo da proposta é desenvolver um Portal de Notícias e Lan-çamentos do Mundo dos Videogames que atenda às necessidades informativas e sociais dos jogadores. Este portal integrará diversas funcionalidades, incluindo:
-1.	Notícias e Lançamentos: Publicação de notícias sobre o universo dos games, lançamentos de jogos, informações sobre jogos em desenvolvimento e no-vidades tecnológicas.  
+1.	Notícias e Lançamentos: Publicação de notícias sobre o universo dos games, lançamentos de jogos, informações sobre jogos em desenvolvimento e novidades tecnológicas.  
 2.	Análises e Avaliações: Espaço para análise crítica dos jogos, com notas atribuídas pelos editores e pela comunidade.  
 3.	Interação Social: Funcionalidades de criação de conta, permitindo que os usuários avaliem e comentem sobre os jogos e notícias, além de interagir entre si.  
 4.	Pesquisa e Filtragem: Ferramentas de pesquisa avançada que permi-tam aos usuários encontrar jogos por gênero, plataforma, data de lançamento, entre outros filtros.  
