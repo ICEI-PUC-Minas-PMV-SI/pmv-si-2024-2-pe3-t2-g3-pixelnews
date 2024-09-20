@@ -45,7 +45,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 ### 3.3.2 Requisitos Não Funcionais
 
 | Código | Requisito Não Funcional (Restrição) | Descrição |
-|--------------------|------------------------------------|
+|--------------------|------------------------------------|----------------------------------------|
 | RNF1 | Compatibilidade | O sistema deve ser compatível com múltiplos dispositivos e navegadores, incluindo desktops, tablets e smartphones, e ser responsivo para diferentes resoluções. | 
 | RNF2 | Usabilidade | O portal deve proporcionar uma interface intuitiva e de fácil navegação, com uma curva de aprendizado mínima, permitindo o uso por usuários de diferentes perfis. |
 | RNF3 |	Segurança | O portal deve utilizar criptografia SSL para proteger a comunicação de dados, especialmente informações de login e senha dos usuários. |
