@@ -76,54 +76,93 @@ Como observado no diagrama de casos de uso da Figura 1, tanto moderador quanto o
 
 Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
 
-#### Gerenciar Professor (CSU01)
+#### Gerenciar Noticias (CSU01)
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+Descrição: Este caso de uso descreve como um administrador pode criar, editar, publicar e excluir páginas em um sistema de gerenciamento de conteúdo.
 
-Ator Primário: Secretária.
+Ator Principal: Administrador
 
-Ator Secundário: Coordenador.
+Ator Secundario: Moderador
 
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+Partes Interessadas:
+- Administrador
+- Moderador
+- Visitantes do site
+
+Pré-condições:
+- O administrador deve estar autenticado no sistema.
+- O administrador deve ter permissões adequadas para gerenciar páginas.
 
 Fluxo Principal:
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+1) 	O moderador/administrador se autenticam no site, acessam a parte de criação de noticias e criam a noticia, com os textose e imagens, além de poder especificar o tempo em que deverá ser publicada.
+2)  Após confirmar a publicação da página, duas coisas acontecem:
+      - Se for o moderador, é criada uma requisição para publicação ao administrador apovar.
+      - Se caso for um administrador realizando o processo de publicar uma noticia, o mesmo não precisa de autorização.
+3) 	Após a aprovção do administrador, a postagem criada é publicada no site e fica disponivel para acesso de todos os usuarios.
+4) 	Com a publicação feita, a página se torna dispinível para edição pelo moderador que a publicou ou por qualquer administrador.
+5) 	Para a pagina poder ser excluida, o moderador deve ser realizar uma nova requisição aos pedidindo para que a pagina possa ser removida, administradores podem remover a página sem precisar de uma aprovação previa.
 
-Fluxo Alternativo (3): Inclusão
+Fluxos Alternativos:
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+Erro de Validação: Se o moderador/administrador não preencher todos os campos obrigatórios ao criar ou editar uma página, o sistema exibe uma mensagem de erro e solicita a correção.
+Cancelar Ação: O administrador pode cancelar qualquer ação (criar, editar, publicar, excluir) a qualquer momento, retornando à lista de páginas sem fazer alterações.
 
-Fluxo Alternativo (3): Remoção
+Pós-condições:
+- A página é criada, editada, publicada ou excluída conforme a ação realizada pelo administrador.
+- As alterações são refletidas imediatamente no site, se aplicável.
 
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+Requisitos Especiais:
+- O sistema deve ser capaz de lidar com múltiplos administradores e moderadores simultaneamente.
+- O sistema deve manter um histórico de alterações para auditoria.
 
-Fluxo Alternativo (3): Alteração
+#### Criação de usuario (CSU02)
+Ator Principal: Usuário
 
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
-Fluxo Alternativo (3): Consulta
+Pré-condições:
+- O usuário deve ter acesso ao formulário de registro.
+- O sistema deve estar online e funcional.
 
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
+Fluxo Principal:
+1) O usuário acessa a página de registro.
+2) O usuário preenche o formulário de registro com as seguintes informações:
+     - Nome de usuário
+     - Senha
+     - E-mail
+3) O sistema valida as informações fornecidas.
+4) Se as informações forem válidas, o sistema cria uma nova conta de usuário e envia um e-mail de confirmação.
+5) O usuário recebe o e-mail de confirmação e clica no link para ativar a conta.
+6) O sistema ativa a conta do usuário e permite o acesso ao sistema.
 
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+Fluxo Alternativo:
+- Se as informações fornecidas forem inválidas, o sistema exibe mensagens de erro apropriadas e solicita correções.
+
+
+#### Atribuição do Cargo de Moderador (CSU03)
+
+Descrição: Este caso de uso descreve como um administrador pode alterar as permissões dos usuarios o site
+
+Ator Principal: Administrador
+
+Pré-condições:
+- O administrador deve estar autenticado no sistema.
+- O usuário a ser promovido deve ter uma conta ativa.
+- O usuário não pode ser promovido além do cargo de Moderador.
+
+Fluxo Principal:
+1) O administrador acessa o painel de administração.
+2) O administrador navega até a seção de gerenciamento de usuários.
+3) O administrador seleciona o usuário que será promovido a moderador.
+4) O administrador clica na opção “Promover a Moderador”.
+5) O sistema atualiza o cargo do usuário para moderador.
+6) O sistema notifica o usuário sobre a nova função.
+
+Fluxo Alternativo:
+- Se o usuário não tiver uma conta ativa, o sistema exibe uma mensagem de erro.
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
+A Figura 2 mostra o diagrama de classes do sistema.
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
@@ -133,9 +172,6 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+| 1	|	Usuario |	Acessar e visualizar conteúdo público, comentar em postagens (se permitido), editar perfil pessoal, enviar mensagens privadas a outros usuários |
+| 2	| Moderador |	Todas as permissões de um usuário comum, editar ou excluir comentários de outros usuários, bloquear ou desbloquear usuários, ecessar relatórios de atividades suspeitas moderar discussões e postagens.|
+| 3 |	Administrador |	Todas as permissões de um moderador, gerenciar cargos e permissões de todos os usuários, acessar e modificar configurações do sistema; criar, editar ou excluir qualquer conteúdo gerenciar backups e manutenção do sistema. |
