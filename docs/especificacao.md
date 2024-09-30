@@ -72,7 +72,7 @@ Como observado no diagrama de casos de uso da Figura 1, tanto moderador quanto o
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-pixelnews/blob/main/src/UMLClass.svg)
+![dcu](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-pixelnews/blob/main/src/UMLClass.png)
  
 ### 3.4.2 Descrições de Casos de Uso
 
@@ -168,12 +168,12 @@ A Figura 2 mostra o diagrama de classes do sistema.
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![dcu](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-pixelnews/blob/main/src/Diagrama_de_classe.svg)
+![dcu](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-pixelnews/blob/main/src/diagramaDeClasse.png)
 
 ### 3.4.4 Descrições das Classes 
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Usuario |	Acessar e visualizar conteúdo público, comentar em postagens (se permitido), editar perfil pessoal, enviar mensagens privadas a outros usuários |
-| 2	| Moderador |	Todas as permissões de um usuário comum, editar ou excluir comentários de outros usuários, bloquear ou desbloquear usuários, ecessar relatórios de atividades suspeitas moderar discussões e postagens.|
-| 3 |	Administrador |	Todas as permissões de um moderador, gerenciar cargos e permissões de todos os usuários, acessar e modificar configurações do sistema; criar, editar ou excluir qualquer conteúdo gerenciar backups e manutenção do sistema. |
+| 1	|	Usuario |	Acessar e visualizar conteúdo público e o forúm, avaliar e comentar conteúdo do site e forúm, editar perfil pessoal, gerenciar biblioteca de jogos, favoritar conteúdo |
+| 2	| Moderador |	Todas as permissões de um usuário comum, editar ou excluir comentários de outros usuários no forúm, moderar discussões e postagens. |
+| 3 |	Administrador |	Todas as permissões de um moderador, gerenciar cargos e permissões de todos os usuários, acessar e modificar configurações do sistema; criar, editar ou excluir qualquer conteúdo, bloquear ou desbloquear qualquer usuario, acessar relatórios de atividades suspeitas. |
