@@ -1,29 +1,29 @@
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
+Constarão a seguir os detalhamentos dos requisitos do sistema.
 
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
+Descrever e especificar as necessidades dos usuários que devem ser atendidas pelo projeto Portal de Notícias e Lançamentos do Mundo dos Videogames.
 
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+O produto será um Portal de Notícias e Lançamentos do Mundo dos Videogames com o nome “PIXELNEWS”. Ele será composto por sete componentes (módulos), com elementos necessários à gestão de contas de usuário, publicação de notícias, avaliações e comentários, pesquisa e filtros avançados, gestão de conteúdo visual, sistema de notificações e feed personalizado, além de uma interface do usuário (UI) intuitiva e um banco de dados robusto.
 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+Fornecer uma plataforma interativa e abrangente para que os jogadores possam acessar as últimas notícias e lançamentos do mundo dos videogames, bem como avaliar, comentar e compartilhar suas opiniões sobre jogos, criando uma comunidade engajada e colaborativa, enquanto recebem informações atualizadas e personalizadas que enriquecem sua experiência gamer.
 
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+O Portal de Notícias e Lançamentos do Mundo dos Videogames não fornece integração direta com plataformas de e-commerce para a compra de jogos ou acessórios. Além disso, o sistema não realiza curadoria automática ou moderação prévia dos comentários, avaliações ou conteúdos publicados pelos usuários, sendo necessário monitoramento manual ou por denúncias da comunidade para evitar abusos.
 
 ### 3.2.4 Benefícios do produto
 
 | # | Benefício | Valor para o Cliente |
 |--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+|1	| Acesso rápido e atualizado a notícias e lançamentos de jogos |	Essencial |
+|2 | Ferramentas de avaliação de comentarios sobre jogos e notícias | Essencial | 
+|3 | Personalização de feed e notificações de interesse gamer | Essencial | 
+|4	| Pesquisa avançada e filtragem por gênero, plataforma, e data de lançamento | Essencial | 
 
 ## 3.3 Descrição geral do produto
 
@@ -31,7 +31,7 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Usuários |	Processamento de Cadastro, Login, Edição de Perfil, Recuperação de Senha e Exclusão de Contas de Usuários. |
+| RF1 | Gerenciar Usuários |	Processamento de Cadastro, Edição de Perfil, Recuperação de Senha e Exclusão de Contas de Usuários. |
 | RF2 | Gerenciar Notícias	| O sistema deve permitir aos administradores criar, editar, publicar e excluir notícias relacionadas a lançamentos e atualizações no mundo dos jogos. |
 | RF3	| Avaliar e Comentar Jogos |	Processamento de Avaliações de Jogos com Pontuação de 1 a 5 Estrelas e Publicação de Comentários em Notícias e Análises de Jogos. |
 | RF4 |	Pesquisar e Aplicar Filtros	| Processamento de Pesquisa de Jogos, Notícias e Análises por Palavras-Chave e Aplicação de Filtros por Gênero, Plataforma, Data de Lançamento, entre Outros. |
@@ -43,6 +43,9 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 | RF10 |	Receber Feedback dos Usuários	| Processamento de Recebimento de Feedback dos Usuários sobre a Plataforma e Seus Conteúdos, Facilitando Melhoria Contínua do Site. |
 | RF11 |	Gerenciar Biblioteca de Jogos	| O sistema deve permitir ao usuário adicionar, editar, excluir e visualizar sua biblioteca de jogos, incluindo informações detalhadas de cada jogo. |
 | RF12 |		Gerenciar Fórum	| O sistema deve permitir a criação, edição, exclusão e moderação de tópicos e discussões no fórum, incluindo a capacidade de responder e interagir com outros usuários. |
+| RF13 |		Login	| 	O sistema deve permitir que os usuários façam login utilizando suas credenciais (e-mail e senha) de maneira segura. |
+| RF14 |		Logout	| 	O sistema deve permitir que os usuários façam logout de suas contas, encerrando sua sessão de maneira adequada e segura. |
+| RF15 |			Gerenciar Jogos	| 	O sistema deve permitir aos administradores criar, editar, visualizar e excluir jogos, incluindo detalhes como nome, descrição, plataforma e data de lançamento. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
