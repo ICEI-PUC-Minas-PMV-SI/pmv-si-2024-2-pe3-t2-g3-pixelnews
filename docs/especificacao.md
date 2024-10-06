@@ -75,103 +75,78 @@ Como observado no diagrama de casos de uso da Figura 1, tanto moderador quanto o
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-pixelnews/blob/main/src/UMLClass.png)
+![dcu](..\src\useCase.svg)
  
 ### 3.4.2 Descrições de Casos de Uso
 
-Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
+#### Login (CSU01)
 
-#### Gerenciar Noticias (CSU01)
+Descrição: O usuario comum pode acessar o sistema através de suas credenciais.
 
-Descrição: Este caso de uso descreve como um administrador pode criar, editar, publicar e excluir páginas em um sistema de gerenciamento de conteúdo.
+Ator Principal: Usuario regular, Moderdores ou Administradores
 
-Ator Principal: Administrador
+Ator Secundário: Não possui
 
-Ator Secundario: Moderador
+Pre-condições:
+- o usuario deve estar cadastrado no sistema.
 
-Partes Interessadas:
-- Administrador
-- Moderador
-- Visitantes do site
+**Fluxo Principal**
 
-Pré-condições:
-- O administrador deve estar autenticado no sistema.
-- O administrador deve ter permissões adequadas para gerenciar páginas.
+ 1) O usuário acessa a pagina de login e informa o usuário e senha.
+ 2) O sistema realiza a validação do login do usuário.
+ 3) Caso a senha esteja correta, o usuario poderá acessar o sistema e esse caso de uso se encerra; caso contrario o é retornado ao passo 1.
 
-Fluxo Principal:
+**Pós-condições:** O usuário tem acesso a informações como o seu perfil e as funcionalidades do forum.
 
-1) 	O moderador/administrador se autenticam no site, acessam a parte de criação de noticias e criam a noticia, com os textose e imagens, além de poder especificar o tempo em que deverá ser publicada.
-2)  Após confirmar a publicação da página, duas coisas acontecem:
-      - Se for o moderador, é criada uma requisição para publicação ao administrador apovar.
-      - Se caso for um administrador realizando o processo de publicar uma noticia, o mesmo não precisa de autorização.
-3) 	Após a aprovção do administrador, a postagem criada é publicada no site e fica disponivel para acesso de todos os usuarios.
-4) 	Com a publicação feita, a página se torna dispinível para edição pelo moderador que a publicou ou por qualquer administrador.
-5) 	Para a pagina poder ser excluida, o moderador deve ser realizar uma nova requisição aos pedidindo para que a pagina possa ser removida, administradores podem remover a página sem precisar de uma aprovação previa.
+#### Logout (CSU02)
 
-Fluxos Alternativos:
+Descrição: O usuario comum pode sair do sistema e deixar de acessar as funcionalidades do site.
 
-Erro de Validação: Se o moderador/administrador não preencher todos os campos obrigatórios ao criar ou editar uma página, o sistema exibe uma mensagem de erro e solicita a correção.
-Cancelar Ação: O administrador pode cancelar qualquer ação (criar, editar, publicar, excluir) a qualquer momento, retornando à lista de páginas sem fazer alterações.
+Ator Principal: Usuario regular, Moderdores ou Administradores
 
-Pós-condições:
-- A página é criada, editada, publicada ou excluída conforme a ação realizada pelo administrador.
-- As alterações são refletidas imediatamente no site, se aplicável.
+Ator Secundário: Não possui
 
-Requisitos Especiais:
-- O sistema deve ser capaz de lidar com múltiplos administradores e moderadores simultaneamente.
-- O sistema deve manter um histórico de alterações para auditoria.
+Pre-condições:
+- o usuario deve estar autenticado no sistema.
 
-#### Criação de usuario (CSU02)
-Ator Principal: Usuário
+**Fluxo Principal**
 
-Pré-condições:
-- O usuário deve ter acesso ao formulário de registro.
-- O sistema deve estar online e funcional.
+ 1) O usuário acessa a pagina de perfil e clica na opção "Sair".
+ 2) O sistema realiza a validação do logout do usuário.
+ 3) O usuário irá retornar a tela de login.
 
-Fluxo Principal:
-1) O usuário acessa a página de registro.
-2) O usuário preenche o formulário de registro com as seguintes informações:
-     - Nome de usuário
-     - Senha
-     - E-mail
-3) O sistema valida as informações fornecidas.
-4) Se as informações forem válidas, o sistema cria uma nova conta de usuário e envia um e-mail de confirmação.
-5) O usuário recebe o e-mail de confirmação e clica no link para ativar a conta.
-6) O sistema ativa a conta do usuário e permite o acesso ao sistema.
-
-Fluxo Alternativo:
-- Se as informações fornecidas forem inválidas, o sistema exibe mensagens de erro apropriadas e solicita correções.
+**Pós-condições:** O usuário deixa de ter acesso a informações como o seu perfil e as funcionalidades do forum, precisando realizar um novo "Login" para que possa retomar o acesso a conta.
 
 
-#### Atribuição do Cargo de Moderador (CSU03)
+#### titulo (CSU03)
 
-Descrição: Este caso de uso descreve como um administrador pode alterar as permissões dos usuarios o site
+Descrição: O usuario comum pode sair do sistema e deixar de acessar as funcionalidades do site.
 
-Ator Principal: Administrador
+Ator Principal: Usuario regular, Moderdores ou Administradores
 
-Pré-condições:
-- O administrador deve estar autenticado no sistema.
-- O usuário a ser promovido deve ter uma conta ativa.
-- O usuário não pode ser promovido além do cargo de Moderador.
+Ator Secundário: Não possui
 
-Fluxo Principal:
-1) O administrador acessa o painel de administração.
-2) O administrador navega até a seção de gerenciamento de usuários.
-3) O administrador seleciona o usuário que será promovido a moderador.
-4) O administrador clica na opção “Promover a Moderador”.
-5) O sistema atualiza o cargo do usuário para moderador.
-6) O sistema notifica o usuário sobre a nova função.
+Pre-condições:
+- o usuario deve estar autenticado no sistema.
 
-Fluxo Alternativo:
-- Se o usuário não tiver uma conta ativa, o sistema exibe uma mensagem de erro.
+**Fluxo Principal**
+
+ 1) O usuário acessa a pagina de perfil e clica na opção "Sair".
+ 2) O sistema realiza a validação do logout do usuário.
+ 3) O usuário irá retornar a tela de login.
+
+**Pós-condições:** O usuário deixa de ter acesso a informações como o seu perfil e as funcionalidades do forum, precisando realizar um novo "Login" para que possa retomar o acesso a conta.
+
+
+
+
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes do sistema.
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![dcu](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe3-t2-g3-pixelnews/blob/main/src/diagramaDeClasse.png)
+![dcu](..//src/DiagramaClasse.svg)
 
 ### 3.4.4 Descrições das Classes 
 
