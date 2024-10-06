@@ -118,9 +118,9 @@ Pre-condições:
 **Pós-condições:** O usuário deixa de ter acesso a informações como o seu perfil e as funcionalidades do forum, precisando realizar um novo "Login" para que possa retomar o acesso a conta.
 
 
-#### titulo (CSU03)
+#### Avaliar e comentar Jogos (CSU03)
 
-Descrição: O usuario comum pode sair do sistema e deixar de acessar as funcionalidades do site.
+Descrição: O usuario comum pode realizar uma avaliação de um jogo e atribuir nota.
 
 Ator Principal: Usuario regular, Moderdores ou Administradores
 
@@ -131,11 +131,56 @@ Pre-condições:
 
 **Fluxo Principal**
 
- 1) O usuário acessa a pagina de perfil e clica na opção "Sair".
- 2) O sistema realiza a validação do logout do usuário.
- 3) O usuário irá retornar a tela de login.
+ 1) O usuário acessa a página do jogo dentro do site.
+ 2) O usuário escreve a sua avaliação sobre o jogo, com um breve texto e uma pontuação entre 0 e 5.
+ 3) O usuário clica em publicar avaliação.
+ 4) O sistema processa o texto e o adiciona a pagina do Jogo na parte de avaliações.
 
-**Pós-condições:** O usuário deixa de ter acesso a informações como o seu perfil e as funcionalidades do forum, precisando realizar um novo "Login" para que possa retomar o acesso a conta.
+**Pós-condições:** O usuário tem sua avaliação publicada no site e qualquer outro usuario poderá visualizar.
+
+#### Pesquisar e aplicar filtros (CSU04)
+
+Descrição: O usuario pode realizar uma pesquisa para encontrar determinado jogo, utilizando palavras chaves e filtros.
+
+Ator Principal: Usuario regular, Moderdores ou Administradores
+
+Ator Secundário: Não possui
+
+Pre-condições:
+- o usuario deve estar autenticado no sistema.
+
+**Fluxo Principal**
+
+ 1) O usuário acessa a página de buscas dentro do site e realiza a inserção de uma palavra chave na aba de buscas.
+ 2) O usuário clica em "Buscar Jogo" e uma lista de jogos será apresentada.
+ 3) O usuário poderá selecionar filtros para melhorar os resultados encontrados.
+
+
+**Pós-condições:** É apresentado ao usuário uma lista de jogos baseados nas palavras chaves e filtros aplicados.
+
+
+#### Gerenciar biblioteca de Jogos (CSU05)
+
+Descrição: O usuario possui uma lista de jogos em que pode adicionar, remover, favoritar jogos.
+
+Ator Principal: Usuario regular, Moderdores ou Administradores
+
+Ator Secundário: Não possui
+
+Pre-condições:
+- o usuario deve estar autenticado no sistema.
+
+**Fluxo Principal**
+
+ 1) O usuário acessa a página de um jogo dentro do site.
+ 2) O usuário clica na opção "adicionar a Lista".
+ 3) Irá mostrar um popup para o usuário solicitando para que ele escolha qual lista de jogos que deseja adicionar o jogo.
+ 4) Ao selecionar a lista, irá aparecer uma notificação mostrando que o jogo foi adicionado a lista determinada pelo usuário.
+
+
+**Pós-condições:** O usuário tem um novo jogo adicionado a lista de jogos em sua biblioteca e poderá acessa-los a qualquer momento.
+
+
 
 
 
@@ -152,6 +197,13 @@ Pre-condições:
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Usuario |	Acessar e visualizar conteúdo público e o forúm, avaliar e comentar conteúdo do site e forúm, editar perfil pessoal, gerenciar biblioteca de jogos, favoritar conteúdo |
+| 1	| Usuario |	Acessar e visualizar conteúdo público e o forúm, avaliar e comentar conteúdo do site e forúm, editar perfil pessoal, gerenciar biblioteca de jogos, favoritar conteúdo |
 | 2	| Moderador |	Todas as permissões de um usuário comum, editar ou excluir comentários de outros usuários no forúm, moderar discussões e postagens. |
-| 3 |	Administrador |	Todas as permissões de um moderador, gerenciar cargos e permissões de todos os usuários, acessar e modificar configurações do sistema; criar, editar ou excluir qualquer conteúdo, bloquear ou desbloquear qualquer usuario, acessar relatórios de atividades suspeitas. |
+| 3 | Administrador |	Todas as permissões de um moderador, gerenciar cargos e permissões de todos os usuários, acessar e modificar configurações do sistema; criar, editar ou excluir qualquer conteúdo, bloquear ou desbloquear qualquer usuario, acessar relatórios de atividades suspeitas. |
+| 4 | Sistema | Realiza as funções enviar notificações ao usuário sobre atualizações do site e notifica sobre coisas relacionadas a jogos especificados pelo usuário |
+| 5 | Jogo | Contem todas as informações relacionadas a um determinado jogo, esse mesmo podendo receber avaliações dos usuários do site |
+| 6 | BibliotecaJogo | Lista de jogos favoritados pelos usuários |
+| 7 | Avaliacoes | Dados criados pelos usuários para avaliar um determinado jogo e atribuir uma nota de 1 a 5. |
+| 8 | Pesquisar | Encontra determinado jogo a partir de palavras chave e filtros que podem ser especificados pelo usuário. |
+| 9 | PostagemForum | Comentario no forum realizado por qualquer usuário, pode ser respondido com outros comentarios ou postagem, podem receber curtidas (likes) ou descurtidas (dislike) |
+| 10 | Forum | Area do site dedicada a discursões e conversar entre os usuários, o Moderador e o Administrador têm acesso a funcionalidades exclusivas, o forum não permite usuários banidos entrarem, os comentarios e discursões podem ser realizadas a qualquer horário |
