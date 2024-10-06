@@ -215,22 +215,36 @@ Pre-condições:
 
 #### Gerenciar Forúm (CSU07)
 
-Descrição: Os usuários realizam a gestão do forum, podendo adicionar e editar conteúdos proprios. Os Moderadores e Administradores podem realizar as mesmas funções com a adição de que foram publicados dentro do forúm e possuem a permissão para excluir comentarios e postagens, como também banir usuários.
+Descrição: Os usuários realizam a gestão do forum, podendo adicionar e editar conteúdos proprios. Os Moderadores e Administradores podem realizar as mesmas funções com a adição de que podem editar e remover conteúdos dos quais não foram de autoria dos mesmos, como também possuem a permissão para excluir comentarios e postagens, como também banir usuários.
 
-Ator Principal: Moderdores ou Administradores
+Ator Principal: Usuário Regular, Moderdores ou Administradores
 
 Ator Secundário: Não possui
 
 Pre-condições:
-- O Moderador/Administrador deve estar autenticado no sistema.
+- O usuários deve estar autenticado no sistema.
 
 **Fluxo Principal**
 
- 1) O usuário acessa a página de sua lista de jogos dentro do site.
- 2) 
+ 1) O usuário acessa o forúm e realiza o procedimento para realizar uma postagem.
+ 2) Após o processamento do sistema, a postagem se encontra disponivel para todos os usuários com acesso ao forúm.
 
+**Fluxo alternativo: Inclusão**
+1) O usuário pode acessar uma postagem ou comentario no forúm e realizar um comentario a partir de uma área dedicada a comentarios.
+2) O uruário pode curtir o comentario clicando no icone de "like".
 
-**Pós-condições:** O usuário tem sua avaliação publicada no site e qualquer outro usuario poderá visualizar.
+**Fluxo Alternativo: Alteração**
+1) O usuário acessa a sua propria postagem e seleciona a opção de editar postagem.
+2) Irá abrir uma tela em que será possível do usuario editar a postagem que realizou.
+3) Após a edição, o sistema irá apresentar uma notificação informando que a alteração foi realizada com sucesso.
+
+**Fluxo Alternativo: Exclusão**
+1) O moderador selecionar a postagem ou comentario desejado e seleciona a opção de excluir.
+2) Será apresentada um popup que perguntará o motivo da exclusão do comentario ou postagem.
+3) O sistema irá notificar o administrador que irá aprovar a exclusão ou não.
+4) Caso aceite, o item em questão será deletado, porém caso o administrador não aprove a exclusão, o conteúdo irá permanecer no site.
+
+**Pós-condições:** O usuário tem sua postagem no forúm realizada e poderá futuramente edita-la ou receber curtidas e repostagens.
 
 
 
