@@ -98,6 +98,8 @@ Pre-condições:
 
 **Pós-condições:** O usuário tem acesso a informações como o seu perfil e as funcionalidades do forum.
 
+*****
+
 #### Logout (CSU02)
 
 Descrição: O usuario comum pode sair do sistema e deixar de acessar as funcionalidades do site.
@@ -117,6 +119,7 @@ Pre-condições:
 
 **Pós-condições:** O usuário deixa de ter acesso a informações como o seu perfil e as funcionalidades do forum, precisando realizar um novo "Login" para que possa retomar o acesso a conta.
 
+***
 
 #### Avaliar e comentar Jogos (CSU03)
 
@@ -138,6 +141,8 @@ Pre-condições:
 
 **Pós-condições:** O usuário tem sua avaliação publicada no site e qualquer outro usuario poderá visualizar.
 
+***
+
 #### Pesquisar e aplicar filtros (CSU04)
 
 Descrição: O usuario pode realizar uma pesquisa para encontrar determinado jogo, utilizando palavras chaves e filtros.
@@ -158,6 +163,7 @@ Pre-condições:
 
 **Pós-condições:** É apresentado ao usuário uma lista de jogos baseados nas palavras chaves e filtros aplicados.
 
+***
 
 #### Gerenciar biblioteca de Jogos (CSU05)
 
@@ -180,6 +186,51 @@ Pre-condições:
 
 **Pós-condições:** O usuário tem um novo jogo adicionado a lista de jogos em sua biblioteca e poderá acessa-los a qualquer momento.
 
+***
+
+#### Facilitar interação social (CSU06)
+
+Descrição: Moderadores ou Administradores possuem recursos para facilitar a interação entre os usuários, dentre esses recurso está a divulgação de uma pagina ou conteudo especifico (Highlight), destacar comentarios de postagens do forúm.
+
+Ator Principal: Moderdores ou Administradores
+
+Ator Secundário: Não possui
+
+Pre-condições:
+- O Moderador deve estar autenticado no sistema.
+
+**Fluxo Principal**
+ 1) O moderador acessa o forúm e nas abas de discursão
+ 2) O moderador poderá selecionar algum comentario em alguma postagem e ativaria a função de destaque para esse comentario.
+ 3) O sistema processa a solicitação e adicona um indicação de comentario "destaque".
+
+**Fluxo Alternativo: Inclusão**
+1) O moderador realiza uma postagem no forúm e seleciona a opção de "Postagem Divulgação".
+2) Após selecionar realizar a publicação da postagem, o sistema irá processar e depois irá notificar que o conteúdo foi publicado no site. 
+
+
+**Pós-condições:** A postagem de divulgação é mostrada no forúm para todos os usuarios como postagem prioritaria, porém com uma prioridade abaixo das postagens de aviso.
+
+***
+
+#### Gerenciar Forúm (CSU07)
+
+Descrição: Os usuários realizam a gestão do forum, podendo adicionar e editar conteúdos proprios. Os Moderadores e Administradores podem realizar as mesmas funções com a adição de que foram publicados dentro do forúm e possuem a permissão para excluir comentarios e postagens, como também banir usuários.
+
+Ator Principal: Moderdores ou Administradores
+
+Ator Secundário: Não possui
+
+Pre-condições:
+- O Moderador/Administrador deve estar autenticado no sistema.
+
+**Fluxo Principal**
+
+ 1) O usuário acessa a página de sua lista de jogos dentro do site.
+ 2) 
+
+
+**Pós-condições:** O usuário tem sua avaliação publicada no site e qualquer outro usuario poderá visualizar.
 
 
 
