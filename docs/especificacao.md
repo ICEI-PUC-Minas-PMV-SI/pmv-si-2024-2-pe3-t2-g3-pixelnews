@@ -246,10 +246,229 @@ Pre-condições:
 
 **Pós-condições:** O usuário tem sua postagem no forúm realizada e poderá futuramente edita-la ou receber curtidas e repostagens.
 
+***
+
+#### Gerenciar Conteúdo Visual (CSU08)
+
+Descrição: O moderador pode realizar publicações no site principal e realizar edições também no conteúdo que publicaram.
+
+Ator Principal: Moderdores ou Administradores
+
+Ator Secundário: Não possui
+
+Pre-condições:
+- O Moderador deve estar autenticado no sistema.
+
+**Fluxo Principal**
+
+ 1) O moderador acessa o site e realiza o procedimento para realizar uma publicação.
+ 2) Após o processamento do sistema, a publicação se encontra disponivel para todos os usuários com acesso ao site.
+
+**Fluxo Alternativo: Alteração**
+1) O moderador acessa a sua propria publicação e seleciona a opção de editar publicação.
+2) Irá abrir uma tela em que será possível do usuario editar a publicação que realizou.
+3) Após a edição, o sistema irá apresentar uma notificação informando que a alteração foi realizada com sucesso.
+
+**Fluxo Alternativo: Exclusão**
+1) O moderador selecionar a publicação desejada e seleciona a opção de excluir.
+2) Será apresentada um popup que perguntará o motivo da exclusão da publicação.
+3) O sistema irá notificar o administrador que irá aprovar a exclusão ou não.
+4) Caso aceite, o item em questão será deletado, porém caso o administrador não aprove a exclusão, o conteúdo irá permanecer no site.
+
+**Pós-condições:** O moderador tem sua publicação no site realizada e poderá futuramente edita-la.
+
+***
+
+#### Gerenciar Usuário (CSU09)
+
+Descrição: Os usuários realizam a gestão de usuário, podendo editar o perfil proprios. 
+
+Ator Principal: Usuário Regular, Moderdores ou Administradores
+
+Ator Secundário: Não possui
+
+Pre-condições:
+- O usuários deve estar autenticado no sistema.
+
+**Fluxo Principal**
+1) O anonimo acessa a pagina de criação de usuario e insere todas as credenciais requeridas pelo sistema.
+2) O sistema irá mandar um pedir uma confirmação no email.
+3) Após a confirmação, o usuario é criado e poderá ser acessado através das credenciais relacionadas.
+
+**Fluxo Alternativo: Alteração** 
+ 1) O usuário acessa a pagina de perfl e acessa as opções de edição de perfil.
+ 2) o usuário realiza as edições desejadas no perfil.
+ 3) Após o processamento do sistema as alterações realizadas se encontraram disponíveis o perfil do usuário.
 
 
+**Pós-condições:** O usuário tem o seu perfl criado e pode acessar as funcionalidades do site e forúm.
+
+***
+
+#### Gerenciar Eventos (CSU10)
+
+Descrição: O administrador pode criar, editar e excluir eventos no sistema.
+
+Ator Principal: Administradores
+
+Ator Secundário: Não possui
+
+Pre-condições:
+- O Administrador deve estar autenticado no sistema.
+
+**Fluxo Principal**
+ 1) O Administrador acessa o sistema na pagina de eventos e vai na opção de novo evento.
+ 2) O sistema irá requisitar descrições e funcionalidades que devem ser  inseridas na descrição do evento. Após isso, o Administrador seleciona a opção "Criar Evento".
+ 3) O sistema irá processar a solicitação e apresentará para todos os usuarios logados no site. 
+
+**Fluxo Alternativo: Alteração**
+1) O Administrador pode realizar alterações no evento a qualquer hora, desde inserir novas informações, alterar os status do evento.
+2) Qualquer administrador pode encerrar ou suspender algum evento.
+
+**Fluxo Alternativo: Exclusão**
+1) O administrador opta por excluir o evento do sistema
+2) Ele acessa as configurações de edição do sistema.
+3) Altera o status do evento para "Finalizado" ou "Suspenso".
+4) Realiza a exclusão do evento.
+
+**Pós-condições:** O evento é criado e todos os usuários autenticados no site podem visualizar.
+
+***
+
+#### Receber Feedback dos usuários (CSU11)
+
+Descrição: Os usuários enviam feedback sobre o site/forúm para o sistema, essa infomação para os administradores.
+
+Ator Principal: Administradores
+
+Ator Secundário: Usuário Regular
+
+Pre-condições:
+- O usuários deve estar autenticado no sistema.
+
+**Fluxo Principal**
+
+ 1) O usuário acessa o seu perfil e seleciona a opção feedback.
+ 2) O usuário escreve uma sugestão de melhoria ou feedback e envia.
+ 3) O sistema processa e a mensagem aparece na tela de mensagens para o Administrador.
+
+**Pós-condições:** O usuário tem sua sugestão de feedback enviada ao painel princiapal do site.
+
+***
+
+#### Gerenciar Noticias (CSU12)
+
+Descrição: Os administradores podem realizar a criação, edição e exclusão de noticias no site. As noticias são sobre novos jogos que estão para serem lançados ou de algumas novidades que envolvam o mercado dos Games.
+
+Ator Principal: Administradores
+
+Ator Secundário: Usuario Regulares
+
+Pre-condições:
+- O administrador deve estar autenticado no sistema.
+
+**Fluxo Principal**
+
+ 1) O administrador acessa a pagina de criação de noticias dentro do site e acessa a aba de criação de noticias.
+ 2) O sistema irá solicitar descrição, imagens e fontes.
+ 3) Após serem inseridas as informações e selecionada a função de "Criar noticia", o sistema irá processar e será publicada a noticia.
+ 4) Com a noticia publicada, ela será visivel para todos os usuarios e visitantes do site.
 
 
+**Fluxo alternativo: Inclusão**
+1) O usuário autenticado pode criar um comentario nas noticias a partir da aba de comentarios.
+2) O comentario do usuário pode receber "gostei" e pode ser denunciado.
+
+
+**Fluxo Alternativo: Alteração**
+1) O administrador pode realizar a edição na noticia através da seção de edição de noticia
+2) Ao clicar no botão de edição, irá aparecer um formulario para edição.
+3) após a edição, será possível aplicar as mudanças através da opção "Salvar".
+4) O sistema vai processar as informações alteradas e as mesmas serão aplicadas imediatamente.
+
+**Fluxo Alternativo: Exclusão**
+1) O administrador pode realizar a exclusão de uma noticia através da seção de edição de noticia.
+2) Ao clicar no botão de edição, irá aparecer a opção de excluir noticia do site.
+3) O sistema irá requisitar a confirmação.
+4) Após confirmada, a noticia será excluida do site, caso contrario, irá permanecer no site.
+
+**Pós-condições:** A noticia é publicada no site e todos os usuarios e visitantes do site podem visualiza-las.
+
+***
+
+#### Gerenciar Jogos (CSU13)
+
+Descrição: O administrador realiza a gestão(Validação, inserção, edição e exclusão) dos jogos que estarão dentro do site e que poderão ser inseridos nas bibliotecas dos usuários.
+
+Ator Principal: Administradores
+
+Ator Secundário: Não possui
+
+Pre-condições:
+- O administrador deve estar autenticado no sistema.
+
+**Fluxo Principal**
+
+ 1) O administrador acessa a pagina de gerenciamento de jogos dentro do site e acessa a aba de adição de novo Jogo.
+ 2) O sistema irá solicitar descrição, imagens e fontes.
+ 3) Após serem inseridas as informações e selecionada a função de "adicionar Jogo", o sistema irá processar e o jogo estará disponível para ser acessado no site.
+ 4) Com o novo jogo adicionado, todos os usuarios autenticados poderão adiciona-lo as suas proprias bibliotecas.
+
+
+**Fluxo alternativo: Inclusão**
+1) O usuário autenticado pode criar uma avaliação do jogo e avaliar com pontuação.
+
+**Fluxo Alternativo: Alteração**
+1) O administrador pode realizar a edição do Jogo através da seção de edição de jogos, no painel de jogos.
+2) Ao clicar no botão de edição, irá aparecer um formulario para edição.
+3) após a edição, será possível aplicar as mudanças através da opção "Salvar".
+4) O sistema vai processar as informações alteradas e as mesmas serão aplicadas imediatamente.
+
+**Fluxo Alternativo: Exclusão**
+1) O administrador pode realizar a exclusão de um jogo através da seção de edição de Jogos.
+2) Ao clicar no botão de edição, irá aparecer a opção de excluir o jogo do site.
+3) O sistema irá requisitar a confirmação.
+4) Após confirmada, o jogo será excluida do site, caso contrario, irá permanecer no site.
+
+**Pós-condições:** O jogo é publicado no site e todos os usuarios autenticados do site podem visualiza-lo e adiciona-lo as suas bibliotecas para que possam realizar uma avaliação posterior.
+
+***
+
+#### Enviar notificações personalizadas (CSU14)
+
+Descrição: O sistema envia notificações personalizadas para o usuário a partir da biblioteca de jogos do usuário.
+
+Ator Principal: Tempo
+
+Ator Secundário: Usuário
+
+Pre-condições:
+- O usuários deve estar autenticado no sistema.
+
+**Fluxo Principal**
+ 1) O usuario acessa o perfil e seleciona a opção de receber notificações nas configurações de perfil.
+ 2) Após a permissão, o sistema irá enviar notificações personalizadas ao usuário.
+
+**Pós-condições:** O usuário recebe notificações personalizadas em seu perfil na seção de notificações de sistema.
+
+***
+
+#### Enviar notificações push (CSU14)
+
+Descrição: O sistema envia notificações personalizadas para o usuário a partir do jogos que o usuário determinou que fosse enviada a notificação.
+
+Ator Principal: Tempo
+
+Ator Secundário: Usuário
+
+Pre-condições:
+- O usuários deve estar autenticado no sistema.
+
+**Fluxo Principal**
+ 1) O usuario acessa o perfil e seleciona a opção de "Receber notificações Push" nas configurações de perfil.
+ 2) Após a permissão, o sistema irá enviar notificações personalizadas ao usuário baseadas nos jogos que o usuario marcar para receber a notificação Push.
+
+**Pós-condições:** O usuário recebe notificações personalizadas em seu perfil na seção de notificações de sistema.
 
 ### 3.4.3 Diagrama de Classes 
 
