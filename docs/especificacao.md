@@ -75,7 +75,7 @@ Como observado no diagrama de casos de uso da Figura 1, tanto moderador quanto o
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](..\src\useCase.svg)
+![dcu](../src/UseCase.svg)
  
 ### 3.4.2 Descrições de Casos de Uso
 
