@@ -7,12 +7,11 @@ import { useState } from 'react';
 
 function App() {
   const [rSenha, setrSenha] = useState(0);
-  const [login, setLogin] = useState('');
-  const [senha, setsenha] = useState('');
+
   return (
     <main className='main'>
       <div className='pagLogin'>
-        {rSenha == 0 && <LoginForm Login={setLogin} senha={setsenha}/>}
+        {rSenha == 0 && <LoginForm mPag={setrSenha} />}
         {rSenha == 1 && <RecSenhaForm />}
 
 

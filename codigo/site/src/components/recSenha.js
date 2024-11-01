@@ -6,7 +6,7 @@ import Logo from '../img/file.png';
 
 
 
-function RecSenhaForm(login,senha) {
+function RecSenhaForm(mPag) {
     const [user, setUser] = useState('');
     const [password, setPassword] = useState('');
 
@@ -19,7 +19,7 @@ function RecSenhaForm(login,senha) {
 
     return (
         <div className='card-main'>
-            <h1 style={{ marginBottom: 1 + 'em' }}>Pixel News</h1>
+            <h1 style={{ marginBottom: 1 + 'em' }}>Cadastro</h1>
             <div className='card-body'>
                 <div style={{marginRight:3+'em'}}>
                 <Image src={Logo} alt="Logo" fluid style={{width:'25vw'}} />

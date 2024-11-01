@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image';
 import Logo from '../img/file.png';
 
 
-function LoginForm() {
+function LoginForm(mPag) {
     const [login, setLogin] = useState('');
     const [senha, setsenha] = useState('');
 
@@ -58,7 +58,7 @@ function LoginForm() {
                     <Button variant="primary" type="submit" style={{margin:'10px', width:'12vw', background:"#00FFFF", color:'#000'}}>
                         Logar
                     </Button>
-                    <Button variant="success" type="submit" style={{margin:'10px',width:'12vw', background:'#7CFC00', color: "#000"}}>
+                    <Button variant="success" onClick={()=>{mPag=1}} type="button" style={{margin:'10px',width:'12vw', background:'#7CFC00', color: "#000"}}>
                         Cadastrar
                     </Button>
                 </div>
