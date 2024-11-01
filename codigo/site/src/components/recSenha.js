@@ -5,15 +5,16 @@ import Image from 'react-bootstrap/Image';
 import Logo from '../img/file.png';
 
 
-function LoginForm() {
-    const [login, setLogin] = useState('');
-    const [senha, setsenha] = useState('');
+
+function RecSenhaForm(login,senha) {
+    const [user, setUser] = useState('');
+    const [password, setPassword] = useState('');
 
     const handleSubmit = (event) => {
         event.preventDefault();
         // Aqui você pode enviar os dados para o servidor ou processá-los conforme necessário
-        console.log('login:', login);
-        console.log('Senha:', senha);
+        console.log('user:', user);
+        console.log('Senha:', password);
     };
 
     return (
@@ -25,24 +26,24 @@ function LoginForm() {
                         
                 </div>
             <Form onSubmit={handleSubmit}>
-                <Form.Group controlId="formBasicLogin">
+                <Form.Group controlId="formBasicUser">
                     <Form.Label>Nome de usuario ou email</Form.Label>
                     <Form.Control
                         type="text"
                         placeholder="Insira o usuário ou senha"
-                        value={login}
-                        onChange={(e) => setLogin(e.target.value)}
+                        value={user}
+                        onChange={(e) => setUser(e.target.value)}
                         className='campo-lgpw'
                     />
                 </Form.Group>
                 <br />
-                <Form.Group controlId="formBasicsenha">
+                <Form.Group controlId="formBasicPassword">
                     <Form.Label>Senha</Form.Label>
                     <Form.Control
                         type="password"
                         placeholder="Insira a senha"
-                        value={senha}
-                        onChange={(e) => setsenha(e.target.value)}
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                         className='campo-lgpw'
                     />
                     <Form.Check
@@ -75,4 +76,4 @@ function LoginForm() {
 
 
 
-export default LoginForm;
+export default RecSenhaForm;
