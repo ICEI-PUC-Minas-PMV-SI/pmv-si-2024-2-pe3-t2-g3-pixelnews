@@ -5,20 +5,22 @@ import Image from 'react-bootstrap/Image';
 import Logo from '../img/file.png';
 
 
-function LoginForm(mPag) {
+function LoginForm({mPag}) {
     const [login, setLogin] = useState('');
     const [senha, setsenha] = useState('');
 
+
+// Função de realizar login, só alterar aqui
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Aqui você pode enviar os dados para o servidor ou processá-los conforme necessário
         console.log('login:', login);
         console.log('Senha:', senha);
     };
+//////////////////////////////
 
     return (
         <div className='card-main'>
-            <h1 style={{ marginBottom: 1 + 'em' }}>Pixel News</h1>
+            <h1 style={{ marginBottom: '10px' }}>Pixel News</h1>
             <div className='card-body'>
                 <div style={{marginRight:3+'em'}}>
                 <Image src={Logo} alt="Logo" fluid style={{width:'25vw'}} />
@@ -58,7 +60,7 @@ function LoginForm(mPag) {
                     <Button variant="primary" type="submit" style={{margin:'10px', width:'12vw', background:"#00FFFF", color:'#000'}}>
                         Logar
                     </Button>
-                    <Button variant="success" onClick={()=>{mPag=1}} type="button" style={{margin:'10px',width:'12vw', background:'#7CFC00', color: "#000"}}>
+                    <Button variant="success" onClick={()=>{mPag(1)}} type="button" style={{margin:'10px',width:'12vw', background:'#7CFC00', color: "#000"}}>
                         Cadastrar
                     </Button>
                 </div>
