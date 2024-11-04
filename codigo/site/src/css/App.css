@@ -13,10 +13,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 90vh; */
+  height: 70vh;
 }
 
 .fDiv{
   width: 100vw;
-  height: 2vh;
+  height: 1vh;
 }

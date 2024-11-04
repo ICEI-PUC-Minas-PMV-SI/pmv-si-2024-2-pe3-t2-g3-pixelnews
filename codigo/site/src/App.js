@@ -17,11 +17,11 @@ function App() {
       <div className='pagLogin'>
         {rSenha == 0 && <LoginForm mPag={setPag} />}
         {rSenha == 1 && <CadUser mPag={setPag}/>}
-
-
-
-
       </div>
+      <div>
+          {/* <PerfilPag/> */}
+      </div>
+
       <div className='fDiv'>
         <Footer />
       </div>

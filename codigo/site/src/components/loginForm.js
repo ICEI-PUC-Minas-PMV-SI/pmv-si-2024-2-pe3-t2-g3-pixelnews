@@ -57,7 +57,7 @@ function LoginForm({mPag}) {
 
 
                 <div className='divBtn'>
-                    <Button variant="primary" type="submit" style={{margin:'10px', width:'12vw', background:"#00FFFF", color:'#000'}}>
+                    <Button variant="primary" type="submit" style={{margin:'10px', width:'12vw', background:"#00FFFF", color:'#000'}} href='/perfil'>
                         Logar
                     </Button>
                     <Button variant="success" onClick={()=>{mPag(1)}} type="button" style={{margin:'10px',width:'12vw', background:'#7CFC00', color: "#000"}}>

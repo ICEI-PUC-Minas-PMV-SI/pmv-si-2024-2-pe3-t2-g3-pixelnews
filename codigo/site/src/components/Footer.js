@@ -6,7 +6,7 @@ import Logo from '../img/file.png'; // Caminho da sua imagem
 
 const Footer = () => {
     return (
-        <footer style={{ backgroundColor: '#363636', padding: '10px 0' }}>
+        <footer style={{ backgroundColor: '#363636', padding: '10px 0', height:'15vh'}}>
             <Container>
                 <Row className="justify-content-center">
                     <Col md={4} className="text-center">
