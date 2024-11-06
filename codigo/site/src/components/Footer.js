@@ -6,7 +6,7 @@ import Logo from '../img/file.png'; // Caminho da sua imagem
 
 const Footer = () => {
     return (
-        <footer style={{ backgroundColor: '#363636', padding: '10px 0', height:'15vh'}}>
+        <footer style={{ backgroundColor: '#363636', padding: '10px 0', height:'8vh'}}>
             <Container>
                 <Row className="justify-content-center">
                     <Col md={4} className="text-center">
@@ -30,13 +30,13 @@ const Footer = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row className="text-center">
+                {/* <Row className="text-center">
                     <Col>
                         <p style={{ marginTop: '20px', color:"#FFF", textShadow: "4px 4px 4px #FFFFFF", fontSize: '10px' }}>
                             © {new Date().getFullYear()} PixelNews. Todos os direitos reservados.
                         </p>
                     </Col>
-                </Row>
+                </Row> */}
             </Container>
         </footer>
     );

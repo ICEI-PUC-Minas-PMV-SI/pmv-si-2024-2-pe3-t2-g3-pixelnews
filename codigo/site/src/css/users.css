@@ -1,28 +1,32 @@
 .main {
   width: 100vw;
-  height: 86vh;
+  height: 100%;
   background-color: #1C1C1C;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  scrollbar-width: 1px;
 }
 .corpoPerfil{
-  width: 90vw;
+  width: 100%;
+  margin: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  height: 100%;
-  /* background-color: #FFF; */
+  /* height: 92%; */
+  /* max-height: 800px; */
+  background-color: #1C1C1C;
   border: 1px #FFF solid;
 }
 .card-main {
   background-color: #1C1C1C;
   width: 60vw;
-  height: 70vh;
+  height: 65vh;
   border: 1px #FFF solid;
   box-shadow: 4px 4px 4px 4px #FFF;
   border-radius: 15px;
@@ -36,14 +40,139 @@
 
 .pCard{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: start;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
-  width: 50vw;
+  /* justify-content: center; */
+  /* flex-wrap: wrap;
+  width: 50vw; */
 }
 
 .fDiv{
   width: 100vw;
   height: 1vh;
+  max-height: 50px !important;
+}
+
+.rMargin{
+  border-left: #ddd 2px solid;
+  border-bottom: #ddd 2px solid;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.lMargin{
+  border-bottom: #ddd 2px solid;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.fJogos{
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.cJogos{
+  width: 20%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: #FFF 2px solid;
+}
+
+.cComentario{
+  /* background-color: #b5b0b0; */
+  /* width: 80%; */
+  border-radius: 15px;
+  /* margin: 10px; */
+  /* padding: 15px; */
+  color: #000;
+}
+
+.tComentario{
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* width: 100%; */
+  text-align: left;
+}
+
+.profile-data, .favorite-games, .recent-comments {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 80%;
+  text-align: left;
+}
+
+/* Estilo da área de comentários como um fórum */
+.recent-comments {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.recent-comments h3 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Estilo de cada comentário individual */
+.recent-comments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-comments li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.recent-comments li p {
+  margin: 0;
+  font-size: 0.95em;
+}
+
+.recent-comments li strong {
+  display: block;
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+/* Nome do jogo e comentário destacados */
+.recent-comments li p strong {
+  font-size: 1.1em;
+  color: #3498db;
+}
+
+.recent-comments li p::before {
+  content: '📌 ';
+  color: #3498db;
+}
+
+.recent-comments li:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Para simular uma resposta a um comentário */
+.recent-comments li .reply {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 5px;
 }
