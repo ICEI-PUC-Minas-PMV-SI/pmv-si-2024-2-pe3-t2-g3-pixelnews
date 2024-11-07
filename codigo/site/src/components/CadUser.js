@@ -27,7 +27,7 @@ function CadUser({ mPag }) {
 ////////////////////////////////////////////////
 
     return (
-        <div className='card-main'>
+        <div className='card-main2'>
             <h1 style={{ marginBottom: '5px' }}>Cadastro</h1>
             <div className='card-body'>
                 <div style={{ marginRight: 3 + 'em' }}>

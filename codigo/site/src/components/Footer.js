@@ -6,14 +6,14 @@ import Logo from '../img/file.png'; // Caminho da sua imagem
 
 const Footer = () => {
     return (
-        <footer style={{ backgroundColor: '#363636', padding: '10px 0', height:'8vh'}}>
+        <footer style={{ backgroundColor: '#363636', padding: '5px 0', height:'15vh'}}>
             <Container>
                 <Row className="justify-content-center">
                     <Col md={4} className="text-center">
                         <Image src={Logo} alt="Logo" fluid style={{ maxHeight: '80px' }} />
                     </Col>
                     <Col md={4} className="text-center">
-                        <h5 style={{color:"#FFF", textShadow: "4px 4px 4px #FFFFFF", fontSize: '20px'}}>Siga-nos</h5>
+                        <h5 style={{color:"#FFF",  fontSize: '20px'}}>Siga-nos</h5>
                         <div>
                             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                                 <FaFacebook size={30} className="mr-3" style={{color:"#FFF"}}/>
@@ -30,13 +30,13 @@ const Footer = () => {
                         </div>
                     </Col>
                 </Row>
-                {/* <Row className="text-center">
+                <Row className="text-center">
                     <Col>
-                        <p style={{ marginTop: '20px', color:"#FFF", textShadow: "4px 4px 4px #FFFFFF", fontSize: '10px' }}>
+                        <p style={{ marginTop: '-15px', color:"#FFF", fontSize: '10px' }}>
                             © {new Date().getFullYear()} PixelNews. Todos os direitos reservados.
                         </p>
                     </Col>
-                </Row> */}
+                </Row>
             </Container>
         </footer>
     );
