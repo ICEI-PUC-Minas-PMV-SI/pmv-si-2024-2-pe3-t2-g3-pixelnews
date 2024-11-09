@@ -45,10 +45,5 @@
 
 4.3.7 - Tela de chat do Forum: Por meio dess tela o usário poderá realizar postagens dentro do forum.
 
-
-
-  
-
-
-
+![dcu](../src/prototipo_site/ConversaForum.png)
 
