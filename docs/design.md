@@ -18,10 +18,26 @@
 
 
 ## 4.3 Protótipos das Interfaces
-  4.3.1 - Tela de Login: Por onde o usuario irá realizar o login no sistema
+
+  4.3.1 - Tela Home:Por meio dessa tela, o usuário pode navegar rapidamente para diferentes áreas do sistema, acessar funcionalidades frequentes e obter uma visão geral do que precisa ser feito.
+  
+![dcu](../src/prototipo_site/Home)
+
+  4.3.2 - Tela de Login: Por onde o usuario irá realizar o login no sistema
   
 ![dcu](../src/prototipo_site/login.png)
 
-  4.3.2 - Tela de Cadastro: Por onde o usuario irá realizar o cadastro no sistema
+  4.3.3 - Tela de Cadastro: Por onde o usuario irá realizar o cadastro no sistema
   
 ![dcu](../src/prototipo_site/cadastro.png)
+
+  4.3.4 - Tela de Jogos Favoritos: A tela onde o usuário pode visualizar uma lista de jogos que ele marcou como favoritos. Ela exibe informações principais de cada jogo, como nome, data de lançamento, gênero, avaliação e as plataformas onde o jogo está disponível. O usuário também pode aplicar filtros, como gênero e plataforma, para refinar a lista de jogos e usar a barra de busca para procurar um título específico. A tela permite ao usuário gerenciar sua lista de favoritos, adicionando ou removendo jogos conforme seu interesse.
+  
+![dcu](../src/prototipo_site/Favoritos.png)
+
+  4.3.5 - Tela de Informações do Jogo: Esta tela exibe informações detalhadas sobre o jogo selecionado, incluindo sua descrição, data de lançamento, gêneros, avaliação e plataformas disponíveis. A tela também pode incluir imagens ou vídeos promocionais do jogo, além de links ou botões para acessar páginas relacionadas, como o site oficial ou uma loja online para compra.
+  
+
+
+
+
