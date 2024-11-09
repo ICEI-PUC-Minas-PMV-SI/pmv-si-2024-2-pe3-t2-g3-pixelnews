@@ -38,6 +38,15 @@
   4.3.5 - Tela de Informações do Jogo: Esta tela exibe informações detalhadas sobre o jogo selecionado, incluindo sua descrição, data de lançamento, gêneros, avaliação e plataformas disponíveis. A tela também pode incluir imagens ou vídeos promocionais do jogo, além de links ou botões para acessar páginas relacionadas, como o site oficial ou uma loja online para compra.
 
 ![dcu](../src/prototipo_site/InfoJogos.png)
+
+4.3.6 - Tela de Foruns: A Tela de Fóruns exibe todos os fóruns abertos no sistema, permitindo que os usuários vejam e acessem as discussões disponíveis. Essa tela serve como um ponto central para que os usuários encontrem tópicos de discussão de interesse, participem de conversas, e acompanhem as atividades mais recentes.
+
+![dcu](../src/prototipo_site/Foruns.png)
+
+4.3.7 - Tela de chat do Forum: Por meio dess tela o usário poderá realizar postagens dentro do forum.
+
+
+
   
 
 
