@@ -10,12 +10,7 @@ O trabalho em desenvolvimento busca criar um portal integrado de notícias e lan
 
 ## Integrantes
 
-Breno de Rezende Moreira  
-Jack Medeiros de Paula Pereira Demori  
 Lucas Araújo Pacheco  
-Lucas Rodrigo Gonçalves  
-Samir de Santi  
-Theo Xavier Lopes  
 Victor Samuel Costa Pereira  
 
 ## Orientador
