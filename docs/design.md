@@ -21,7 +21,7 @@
 
   4.3.1 - Tela Home:Por meio dessa tela, o usuário pode navegar rapidamente para diferentes áreas do sistema, acessar funcionalidades frequentes e obter uma visão geral do que precisa ser feito.
   
-![dcu](../src/prototipo_site/Home)
+![dcu](../src/prototipo_site/Home.png)
 
   4.3.2 - Tela de Login: Por onde o usuario irá realizar o login no sistema
   
@@ -36,6 +36,8 @@
 ![dcu](../src/prototipo_site/Favoritos.png)
 
   4.3.5 - Tela de Informações do Jogo: Esta tela exibe informações detalhadas sobre o jogo selecionado, incluindo sua descrição, data de lançamento, gêneros, avaliação e plataformas disponíveis. A tela também pode incluir imagens ou vídeos promocionais do jogo, além de links ou botões para acessar páginas relacionadas, como o site oficial ou uma loja online para compra.
+
+![dcu](../src/prototipo_site/InfoJogos.png)
   
 
 
