@@ -47,3 +47,7 @@
 
 ![dcu](../src/prototipo_site/ConversaForum.png)
 
+4.3.8 - Tela de perfil de usuario: Por meio dessa tela o usuário pode acessar o seu perfil, ver seus comentario e jogos favoritos, além de poder realizar costumizações em seu perfil
+
+![dcu](../src/prototipo_site/Perfil.png)
+
