@@ -9,7 +9,7 @@
 O trabalho em desenvolvimento busca criar um portal integrado de notícias e lançamentos do mundo dos videogames que atenda à crescente demanda por informações atualizadas e interação social no setor, oferecendo funcionalidades como avaliações de jogos, comentários, gráficos, e ferramentas de pesquisa avançada em um ambiente que promove uma comunidade ativa e engajada. Aproveitando práticas de gamificação e tecnologias emergentes, o projeto se baseia em estudos acadêmicos sobre a gestão eficiente de informações e a aplicação de elementos interativos para aumentar o engajamento dos usuários. O portal visa preencher uma lacuna existente no mercado, oferecendo uma plataforma abrangente e intuitiva que beneficia tanto jogadores quanto desenvolvedores e publicadores de jogos, fortalecendo a conexão entre a comunidade gamer e a indústria de videogames.
 
 ## Integrantes
-Samir de Santi
+
 Lucas Araújo Pacheco  
 Victor Samuel Costa Pereira  
 
